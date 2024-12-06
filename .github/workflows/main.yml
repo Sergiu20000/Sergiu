@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+<body>
+    <h1>Completati formularul</h1>
+    <form action="#" method="post">
+        <label for="nume">Numele și prenumele:</label><br>
+        <input type="text" id="nume" name="nume" required><br><br>
+
+        <label for="email">E-Mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <p>Aveți calculator acasă?</p>
+        <input type="radio" id="da" name="calculator" value="da">
+        <label for="da">Da</label>
+        <input type="radio" id="nu" name="calculator" value="nu">
+        <label for="nu">Nu</label><br><br>
+
+        <p>Selectați cursurile la care vreți să vă înscrieți:</p>
+        <input type="checkbox" id="visual-cpp" name="cursuri" value="Visual C++">
+        <label for="visual-cpp">Programare Visual C++</label><br>
+        <input type="checkbox" id="java" name="cursuri" value="Java">
+        <label for="java">Programare Java</label><br>
+        <input type="checkbox" id="web-design" name="cursuri" value="Web Design">
+        <label for="web-design">Web Design</label><br>
+        <input type="checkbox" id="alte" name="cursuri" value="Altele">
+        <label for="alte">Altele</label><br><br>
+
+        <label for="plata">Specificați forma de plată:</label>
+        <select id="plata" name="plata">
+            <option value="mastercard">Master Card</option>
+            <option value="visa">Visa</option>
+            <option value="paypal">PayPal</option>
+        </select><br><br>
+
+        <button type="submit">Înscrie-mă!</button>
+        <button type="reset">Anulez</button>
+    </form>
+</body>
+</html>
